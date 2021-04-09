@@ -37,7 +37,7 @@ jobs:
           path: main1.exe
           
       - name: Send artifacts to telegram
-        uses: appleboy/telegram-action@v1
+        uses: appleboy/telegram-action@master
         with:
           to: 474302558
           token: 1702161091:AAFJLpYFZWlxNpa3BW2J7ySg6ngPK7Eavew
