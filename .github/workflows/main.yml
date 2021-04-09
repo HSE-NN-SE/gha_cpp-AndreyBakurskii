@@ -24,12 +24,14 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v1
-      - uses: ilammy/msvc-dev-cmd@v1
+      
+      - name: install mingw-w64
+        run: sudo apt-get install mingw-w64
 
       # Runs a single command using the runners shell
       - name: Build exe
-        run: cl /EHsc main1.cpp
-        
+        run: x86_64-w64-mingw32-gcc -o main1.exe main1.cpp
+
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
