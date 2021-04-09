@@ -31,6 +31,6 @@ jobs:
         run: cl /EHsc main1.cpp
         
       - name: Run
-        run: main1.exe
+        run: main1
     
         
