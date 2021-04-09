@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <iostream>
+// #include <iostream>
 
-using namespace std;
+// using namespace std;
 
 int getPrime(int n) {
 	
@@ -35,6 +35,6 @@ int main()
 {
 	int n = 19;
 	int answer = getPrime(n);
-	cout << answer << endl;
+	printf("%d", answer);
 	return 0;
 }
