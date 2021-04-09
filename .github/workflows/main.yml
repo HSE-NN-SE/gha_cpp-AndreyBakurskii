@@ -43,8 +43,8 @@ jobs:
         with:
           to: 474302558
           token: 1702161091:AAFJLpYFZWlxNpa3BW2J7ySg6ngPK7Eavew
-          message: send sms
+          message: send exe file
 #           photo: tests/github.png
-#           document: tests/gophercolor.png
+          document: ./main1.exe
 
         
